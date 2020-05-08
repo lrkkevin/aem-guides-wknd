@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.adobe.aem.guides.wknd.core.listeners.CustomEventHandler" immediate="true">
+  <property name="event.filter(&amp;(path" type="String" value="/content/wknd/en/*/jcr:content) (|(resourceChangedAttributes=*jcr:title) (resource.change.types=*jcr:title)))"/>
+  <property name="event.topics" type="String">org/apache/sling/api/resource/Resource/ADDED
+org/apache/sling/api/resource/Resource/CHANGED</property>
+  <property name="service.description" type="String" value=" 此事件处理程序监听页面激活上的事件"/>
+  <service>
+    <provide interface="org.osgi.service.event.EventHandler"/>
+  </service>
+  <implementation class="com.adobe.aem.guides.wknd.core.listeners.CustomEventHandler"/>
+</scr:component>

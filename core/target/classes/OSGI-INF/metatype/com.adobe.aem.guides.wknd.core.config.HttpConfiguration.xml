@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.adobe.aem.guides.wknd.core.config.HttpConfiguration">
+  <OCD id="com.adobe.aem.guides.wknd.core.config.HttpConfiguration" name="Http Configuration" description="配置URL参数，以对JSON web服务进行HTTP调用">
+    <AD id="enableConfig" type="Boolean" name="Enable config" description="是否启用配置"/>
+    <AD id="getProtocol" type="String" name="Protocol" description="选择协议">
+      <Option label="HTTP" value="http"/>
+      <Option label="HTTPS" value="https"/>
+    </AD>
+    <AD id="getServer" type="String" name="Server" description="输入服务器名"/>
+    <AD id="getEndpoint" type="String" name="Endpoint" description="输入接口名"/>
+  </OCD>
+  <Designate pid="com.adobe.aem.guides.wknd.core.services.impl.HttpServiceImpl">
+    <Object ocdref="com.adobe.aem.guides.wknd.core.config.HttpConfiguration"/>
+  </Designate>
+</metatype:MetaData>

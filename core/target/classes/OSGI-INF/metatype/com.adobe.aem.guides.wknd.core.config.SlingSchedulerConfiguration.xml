@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.adobe.aem.guides.wknd.core.config.SlingSchedulerConfiguration">
+  <OCD id="com.adobe.aem.guides.wknd.core.config.SlingSchedulerConfiguration" name="SlingSchedulerConfiguration" description="Sling scheduler 配置">
+    <AD id="schdulerName" type="String" name="Scheduler name" description="调度器的名称" default="自定义Sling调度器配置"/>
+    <AD id="enabled" type="Boolean" name="Enabled" description="True代表启动" default="false"/>
+    <AD id="cronExpression" type="String" name="Cron Expression" description="调度程序使用的Cron表达式" default="0\ *\ *\ *\ *\ ?"/>
+    <AD id="customParameter" type="String" name="Custom Parameter" description="自定义参数" default="AEM\ Scheduler\ Demo"/>
+  </OCD>
+  <Designate pid="com.adobe.aem.guides.wknd.core.schedulers.CustomScheduler">
+    <Object ocdref="com.adobe.aem.guides.wknd.core.config.SlingSchedulerConfiguration"/>
+  </Designate>
+</metatype:MetaData>

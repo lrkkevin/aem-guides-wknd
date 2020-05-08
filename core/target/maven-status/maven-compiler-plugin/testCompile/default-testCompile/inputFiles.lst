@@ -1,0 +1,5 @@
+/Users/kevin/Documents/00-kevin/Workspace/01.HongkongBusiness/00-AEM/code/aem-guides-wknd/core/src/test/java/com/adobe/aem/guides/wknd/core/servlets/SimpleServletTest.java
+/Users/kevin/Documents/00-kevin/Workspace/01.HongkongBusiness/00-AEM/code/aem-guides-wknd/core/src/test/java/com/adobe/aem/guides/wknd/core/listeners/SimpleResourceListenerTest.java
+/Users/kevin/Documents/00-kevin/Workspace/01.HongkongBusiness/00-AEM/code/aem-guides-wknd/core/src/test/java/com/adobe/aem/guides/wknd/core/schedulers/SimpleScheduledTaskTest.java
+/Users/kevin/Documents/00-kevin/Workspace/01.HongkongBusiness/00-AEM/code/aem-guides-wknd/core/src/test/java/com/adobe/aem/guides/wknd/core/filters/LoggingFilterTest.java
+/Users/kevin/Documents/00-kevin/Workspace/01.HongkongBusiness/00-AEM/code/aem-guides-wknd/core/src/test/java/com/adobe/aem/guides/wknd/core/models/HelloWorldModelTest.java
